@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Google</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
+
+        <style>
+            nav {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+               display: inline; 
+            }
+
+            li a {
+                text-decoration: none;
+                color: rgb(37, 37, 37);
+                margin-left: 20px;
+                font-size: 14px;
+                font-family: 'Arial';
+            }
+
+            li a:hover {
+                text-decoration: underline;
+            }
+
+            #sign-in {
+                background-color: #1a73e8;
+                border: none;
+                border-radius: 5px;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 8px 26px;
+                color: white;
+                font-size: 14px;
+                align-self: flex-start;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                justify-items: center;
+                position: relative;
+                margin-top: 15%;
+            }
+
+            .logo {
+
+            }
+
+            #google-apps {
+                font-size: 24px;
+                vertical-align: middle;
+                color: rgb(100, 99, 99);
+            }
+
+            .right-list {
+                font-size: 13px;
+                color:rgba(0,0,0,0.87);
+            }
+
+            .searchbar {
+                border-radius: 35px;
+                background-color:white;
+                border-color: rgb(218, 217, 217);
+                height: 42px;
+                width: 575px;
+                margin-top: 25px;
+                border-style: solid;
+                outline: 100;
+                border-width: 1.9px;
+            }
+
+            .search-wrapper {
+                position: relative;
+            }
+
+            .magnifying-glass {
+                position: absolute;
+                top: 32px;
+                left: 15px;
+                color: rgb(158, 158, 158);
+                -webkit-transform: rotate(45deg); 
+                -moz-transform: rotate(45deg); 
+                -o-transform: rotate(45deg);
+                transform: rotate(315deg);
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            .two-buttons {
+                display: flex;
+                height: 100px;
+                width: 283px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+            }
+
+            button.grey-button {
+                display: inline-block;
+                height: 36px;
+                background-color: #f8f9fa;
+                border-style: none;
+                border-radius: 4px;
+                color: #3c4043;
+                min-width: 54px;
+                font-size: 14px;
+                font-family: 'Arial';
+                /*margin: 11px 4px 11px 4px;*/  
+                padding: 0px 16px;
+                text-align: center;
+                line-height: 27px;
+                border: 1px solid rgb(248, 249, 250);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <section>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="" style="margin-left:15px;">Store</a></li>
+                </ul>
+            </section>
+                
+            <section style="margin-top: -9px;">
+                <ul>
+                    <li><a href="" class="right-list">Gmail</a></li>
+                    <li><a href="" class="right-list" style="margin-left: 10px;">Images</a></li>
+                    <li><i class="material-icons" id="google-apps" style="margin-left: 15px; margin-right: -23px;">more_vert</i></li>
+                    <li><i class="material-icons" id="google-apps" style="margin-right: -23px;">more_vert</i></li>
+                    <li><i class="material-icons" id="google-apps">more_vert</i></li>
+                    <li><button id="sign-in" type="button">Sign in</button></li>
+                </ul>
+            </section>
+        </nav>
+
+        <main>
+            <img id="logo" class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <div class="search-wrapper">
+                <input type="text" class="searchbar">
+                <div class="magnifying-glass">
+                    &#9906;     
+                </div>
+            </div>
+            <section class="two-buttons">
+                <button type="button" class="grey-button">
+                    Google Search
+                </button>
+                <button type="button" class="grey-button">
+                    I'm Feeling Lucky
+                </button>
+            </section>
+        </main>
+    </body>
+</html>
