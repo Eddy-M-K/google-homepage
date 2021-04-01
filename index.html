@@ -137,16 +137,31 @@
                 font-size: 14px;
                 font-family: 'Arial';
                 /*margin: 11px 4px 11px 4px;*/  
-                padding: 0px 16px;
+                padding: 0px 15px;
                 text-align: center;
                 line-height: 27px;
-                border: 1px solid rgb(248, 249, 250);
+                border: 1.5px solid rgb(248, 249, 250);
                 cursor: pointer;
+                text-decoration: none;
             }
 
             button.grey-button:hover {
                 border: solid 1.5px rgb(228, 228, 228);
-                /* margin: -1px; */
+            }
+
+            button.grey-button:visited {
+                color: #3c4043;
+                text-decoration: none;
+            }
+
+            a.a-grey-button:visited {
+                color: #3c4043;
+                text-decoration: none;
+            }
+
+            a.a-grey-button {
+                color: #3c4043;
+                text-decoration: none;
             }
 
             p.offer {
@@ -251,7 +266,7 @@
                     Google Search
                 </button>
                 <button type="button" class="grey-button">
-                    <a href="https://www.google.com/doodles">I'm Feeling Lucky</a>
+                    <a href="https://www.google.com/doodles" class="a-grey-button">I'm Feeling Lucky</a>
                 </button>
             </section>
             <p class="offer">Google offered in: <a class="french" href="https://www.google.com/setprefs?sig=0_fcgJELKbDisoRiMzS_8XEa7zbwQ%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwj0tOWfyNTvAhWxGVkFHb72DUUQ2ZgBCA8">Français</a></p>
